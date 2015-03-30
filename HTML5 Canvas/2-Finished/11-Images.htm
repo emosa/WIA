@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Images</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+	
+	</head>
+	<body>
+		<h1>Drawing Images</h1>
+		<p>Images can be drawn directly onto a canvas element in a variety of ways. Your code can drawn an image
+		directly from an IMG or VIDEO element that is already in the page or loaded dynamically via script, or 
+		another canvas element can be used as a source image.</p>
+		<canvas id="Canvas1" width="500" height="650">Your browser does not support canvas.</canvas>
+		
+		<!-- source images used in this example -->
+		<img id="img1" src="images/stop-sign.jpg" width="477" height="600" style="display:none;">
+		<video id="vid1" src="video/video.mp4" loop style="display:none"></video>
+		
+		<script type="text/javascript" src="js/Images.js"></script>
+		
+	</body>
+</html>
