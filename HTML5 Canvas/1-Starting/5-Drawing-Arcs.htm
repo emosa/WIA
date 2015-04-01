@@ -14,8 +14,42 @@
 					var ctx = theCanvas.getContext("2d");
 					if (ctx) {
 						
+						ctx.strokestyle= 'blue';
+						ctx.fillStyle = 'red';
+						ctx.lineWidth= 5;
+						
+						//Stroke A Quater Arc
+						
+						ctx.beginPath();
+						//arc (x, y, r, Sa, Ea, Clockwise or counter);
+						ctx.arc(50, 150, 100, 1.5 * Math.PI, 2*Math.PI);
+						
+						ctx.stroke();
+						//stroke a 3/4 arc
+						
+						ctx.beginPath();
+						ctx.arc(300, 150, 100, 0, 1.5*Math.PI, false);
+						ctx.stroke();
 						
 						
+						//full circle
+						var degrees = 360;
+						var radians = (degrees/180)*Math.PI;
+						
+						ctx.beginPath();
+						ctx.arc(550, 150, 100, 0, radians);
+						ctx.fill();
+						ctx.stroke();	
+						
+						//half circle
+						var degrees = 180;
+						var radians = (degrees/180)*Math.PI;
+						
+						ctx.beginPath();
+						ctx.arc(550, 150, 100, 0, radians);
+						ctx.fill();
+						ctx.stroke();						
+										
 					}
 				}
 			}
