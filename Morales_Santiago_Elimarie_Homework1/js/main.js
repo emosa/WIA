@@ -21,6 +21,7 @@ FILE SETUP
 // Setup the call to that canvas and get it's 2d context
 //Use Modernizr to verify that your browser supports canvas, include a fallback message
 ********************************************/
+
 	window.onload = function(){
 		var canvas = document.getElementById("PART1");
 		var ctx = canvas.getContext("2d");
@@ -41,7 +42,11 @@ Set the stroke color to black and the dimension of the stroke are the same as th
 Reminder - set the style first then draw.
 ********************************************/
 
-//Draw Rectangle here
+	ctx.fillStyle = "rgb(150,255,150)";
+	ctx.strokeStyle = "rgb(0,0,0)";
+	ctx.lineWidth = 1;
+	ctx.fillRect(0, 0, 50, 100);
+	ctx.strokeRect(0, 0, 50, 100);
 
 
 /*******************************************
@@ -56,8 +61,15 @@ Reminder - set the style first then draw.
 Use the arc method
 ********************************************/
 
-
-//Draw Circle here
+	canvas = document.getElementById("PART2");
+	ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(50, 50, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(255,150,150,0.5)";
+	ctx.fill();
+	
+	ctx.strokeStyle = "rgb(0,0,0)";
 
 
 
