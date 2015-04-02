@@ -1,10 +1,9 @@
 /*
      Name: Elimarie Morales Santiago
-     Date: April 1, 2015
+     Date: April 2, 2015
      Class & Section:  WIA-333O
      Comments: "HTML5 Canvas Drawing"
  */
-
 
 /*******************************************
 HTML5 Shape Drawing Activity
@@ -21,7 +20,15 @@ FILE SETUP
 // Link the main.js file
 // Setup the call to that canvas and get it's 2d context
 //Use Modernizr to verify that your browser supports canvas, include a fallback message
-
+********************************************/
+	window.onload = function(){
+		var canvas = document.getElementById("PART1");
+		var ctx = canvas.getContext("2d");
+		if (!Modernizr.canvas){
+				alert("Canvas not supported in your browser");
+			}else{
+				alert("Canvas supported in your browser");
+		}
 
 /*******************************************
 PART 1
@@ -125,3 +132,4 @@ You must use at least 3 different methods.
 // Draw scene here
 
 
+}
