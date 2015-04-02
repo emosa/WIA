@@ -5,35 +5,34 @@
      Comments: "HTML5 Canvas Drawing"
  */
 
-
 /*******************************************
 HTML5 Shape Drawing Activity
     1.  Setup the canvas and 2d context
     2.  Draw out each shape in the sections below
-     
 ********************************************/
 
 /*******************************************
 FILE SETUP
 
 // Setup up 7 different Canvases in index.html one for each problem.
-// Link Modernizr.js
+//Link Modernizr.js
 // Link the main.js file
 // Setup the call to that canvas and get it's 2d context
 //Use Modernizr to verify that your browser supports canvas, include a fallback message
 ********************************************/
-window.onload = function(){
-	
+
+window.onload = function()
+{
 	var canvas = document.getElementById("PART1");
 	var ctx = canvas.getContext("2d");
 	var image = new Image();
-	image.src = "image/logo/png";
+	image.src = "image/logo.png";
 	if (!Modernizr.canvas)
-		{
-		 	alert("Canvas not supported in your browser");
-		}else{
-			alert("Canvas supported in your browser")
-		}
+	{
+    	alert("Canvas not supported in your browser");
+    }else{
+    	alert("Canvas supported in your browser")
+    }
 	
 /*******************************************
 
@@ -50,8 +49,8 @@ Reminder - set the style first then draw.
 	ctx.fillStyle = "rgb(150,255,150)";
 	ctx.strokeStyle = "rgb(0,0,0)";
 	ctx.lineWidth = 1;
-	ctx.fillRect(0 ,0 ,50 ,100);
-	ctx.strokeRect(0, 0 ,50 ,100);
+	ctx.fillRect(0, 0, 50, 100);
+	ctx.strokeRect(0, 0, 50, 100);
 
 /*******************************************
 PART 2
@@ -68,17 +67,16 @@ Use the arc method
 	canvas = document.getElementById("PART2");
 	ctx = canvas.getContext("2d");
 	ctx.beginPath();
-	ctx.arc(50, 50, 20, 0, Math.PI*2,false);
+	ctx.arc(50 ,50 ,20 ,0, Math.PI*2,false);
 	ctx.closePath();
 	ctx.fillStyle = "rgba(255,150,150,0.5)";
 	ctx.fill();
-	
+
 	ctx.strokeStyle = "rgb(0,0,0)";
 	ctx.beginPath();
-	ctx.arc(50, 50, 30, 0, Math.PI*2,false);
+	ctx.arc(50 ,50 ,30, 0, Math.PI*2,false);
 	ctx.closePath();
 	ctx.stroke();
-
 
 /*******************************************
 PART 3
@@ -95,7 +93,7 @@ Height and width and color are up to you.
 	ctx = canvas.getContext("2d");
 	ctx.fillStyle = "rgb(90,150,90)";
 	ctx.lineWidth = 2;
-	ctx.beginPath()
+	ctx.beginPath();
 	ctx.moveTo(100, 100);
 	ctx.lineTo(300, 100);
 	ctx.lineTo(120, 220);
@@ -104,7 +102,6 @@ Height and width and color are up to you.
 	ctx.closePath();
 	ctx.fill();
 	
-
 /*******************************************
 PART 4
 
@@ -116,8 +113,23 @@ Position, height, width and color are your choice.
 Do not overlap any other object.
 
 ********************************************/
-
-//Draw Umbrella top here
+	canvas = document.getElementById("PART4");
+	ctx = canvas.getContext("2d");
+	ctx.strokeStyle = "rgb(0,20,0)";
+	ctx.fillStyle = "rgb(255,150,13)";
+	ctx.lineWidth = 8;
+	ctx.beginPath();
+	ctx.moveTo(50, 350);
+	ctx.bezierCurveTo(50, 50, 350, 50, 350, 350);
+	ctx.bezierCurveTo(350, 320, 300, 320, 300, 350);
+	ctx.bezierCurveTo(300, 320, 250, 320, 250, 350);
+	ctx.bezierCurveTo(250, 320, 200, 320, 200, 350);
+	ctx.bezierCurveTo(200, 320, 150, 320, 150, 350);
+	ctx.bezierCurveTo(150, 320, 100, 320, 100, 350);
+	ctx.bezierCurveTo(100, 320, 50, 320, 50, 350);
+	ctx.closePath();
+	ctx.stroke();
+	ctx.fill();
 
 /*******************************************
 PART 5
@@ -160,3 +172,4 @@ You must use at least 3 different methods.
 // Draw scene here
 
 
+}
