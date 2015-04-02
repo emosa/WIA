@@ -75,9 +75,6 @@ Use the arc method
 	ctx.closePath();
 	ctx.stroke();
 
-
-
-
 /*******************************************
 PART 3
 
@@ -89,8 +86,18 @@ Height and width and color are up to you.
 
 ********************************************/
 
-
-//Draw Star here
+	canvas = document.getElementById("PART3");
+	ctx = canvas.getContext("2d");
+	ctx.fillStyle = "rgb(90,150,150)";
+	ctx.lineWidth = 2;
+	ctx.beginPath();
+	ctx.moveTo(100, 100);
+	ctx.lineTo(300, 100);
+	ctx.lineTo(120, 220);
+	ctx.lineTo(200, 50);
+	ctx.lineTo(260, 220);
+	ctx.closePath();
+	ctx.fill();
 
 
 /*******************************************
