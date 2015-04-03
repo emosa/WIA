@@ -25,6 +25,8 @@ FILE SETUP
 	window.onload = function(){
 		var canvas = document.getElementById("PART1");
 		var ctx = canvas.getContext("2d");
+		var image = new Image();
+		image.src = "image/logo.png";
 		if (!Modernizr.canvas){
 				alert("Canvas not supported in your browser");
 			}else{
@@ -158,9 +160,11 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 ********************************************/
 
-//Draw images here
-
-
+ canvas = document.getElementById("PART6");
+ ctx = canvas.getContext("2d");
+ ctx.drawImage(image, 0, 0);
+ ctx.drawImage(image, 0, 1200, image.width/2, image.height/2);
+ ctx.drawImage(image, 300, 500, 500, 500, 1800, 1200, 500, 500);
 
 /*******************************************
 PART 7
