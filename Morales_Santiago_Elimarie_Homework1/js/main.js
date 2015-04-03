@@ -42,7 +42,7 @@ Set the stroke color to black and the dimension of the stroke are the same as th
 Reminder - set the style first then draw.
 ********************************************/
 
-	ctx.fillStyle = "rgb(20,20,135)";
+	ctx.fillStyle = "rgb(0,135,189)";
 	ctx.strokeStyle = "rgb(0,0,0)";
 	ctx.lineWidth = 1;
 	ctx.fillRect(0, 0, 50, 100);
@@ -112,7 +112,24 @@ Do not overlap any other object.
 
 ********************************************/
 
-//Draw Umbrella top here
+ canvas = document.getElementById("PART4");
+ ctx = canvas.getContext("2d");
+ ctx.strokeStyle = "rgb(111,111,111)";
+ ctx.fillStyle = "rgb(67,169,221)";
+ ctx.lineWidth = 8;
+ ctx.beginPath();
+ ctx.moveTo(50, 350);
+ ctx.bezierCurveTo(50, 50, 350, 50, 350, 350);
+ ctx.bezierCurveTo(350, 320, 300, 320, 300, 350);
+ ctx.bezierCurveTo(300, 320, 250, 320, 250, 350);
+ ctx.bezierCurveTo(250, 320, 200, 320, 200, 350);
+ ctx.bezierCurveTo(200, 320, 150, 320, 150, 350);
+ ctx.bezierCurveTo(150, 320, 100, 320, 100, 350);
+ ctx.bezierCurveTo(100, 320, 50, 320, 50, 350);
+ ctx.closePath();
+ ctx.stroke();
+ ctx.fill();
+ 
 
 /*******************************************
 PART 5
