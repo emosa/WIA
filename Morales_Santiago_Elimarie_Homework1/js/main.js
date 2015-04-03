@@ -177,7 +177,34 @@ You must use at least 3 different methods.
 
 ********************************************/
 
-// Draw scene here
-
+	canvas = document.getElementById("PART7");
+	ctx = canvas.getContext("2d");
+	
+	ctx.fillStyle = "rgb(0,0,0)";
+	ctx.lineWidth = 1;
+	ctx.fillRect(200, 200, 20, 500);
+	
+	ctx.beginPath();
+	ctx.arc(50, 50, 200, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgb(253,253,150)";
+	ctx.fill();
+	
+	ctx.strokeStyle = "rgb(0,20,0)";
+	ctx.fillStyle = "rgb(242,87,144)";
+	ctx.lineWidth = 8;
+	ctx.beginPath();
+	ctx.moveTo(50, 350);
+	ctx.bezierCurveTo(50, 50, 350, 50, 350, 350);
+ 	ctx.bezierCurveTo(350, 320, 300, 320, 300, 350);
+ 	ctx.bezierCurveTo(300, 320, 250, 320, 250, 350);
+ 	ctx.bezierCurveTo(250, 320, 200, 320, 200, 350);
+ 	ctx.bezierCurveTo(200, 320, 150, 320, 150, 350);
+ 	ctx.bezierCurveTo(150, 320, 100, 320, 100, 350);
+ 	ctx.bezierCurveTo(100, 320, 50, 320, 50, 350);
+ 	ctx.closePath();
+ 	ctx.stroke();
+ 	ctx.fill();
+	
 
 }
