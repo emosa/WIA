@@ -139,7 +139,11 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 ********************************************/
 
-//Draw text here
+ canvas = document.getElementById("PART5");
+ ctx = canvas.getContext("2d");
+ ctx.font = "40px Impact, Charcoal, sans-serif";
+ ctx.fillStyle = "rgb(242,88,53)";
+ ctx.fillText("Let your light shine!", 10, 50);
 
 /*******************************************
 PART 6
