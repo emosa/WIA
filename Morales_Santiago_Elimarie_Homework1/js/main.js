@@ -190,6 +190,22 @@ You must use at least 3 different methods.
 	ctx.fillStyle = "rgb(253,253,150)";
 	ctx.fill();
 	
+	ctx.beginPath();
+	ctx.moveTo(165,80);
+	ctx.bezierCurveTo(130, 90, 130, 150, 230, 150);
+	ctx.bezierCurveTo(250, 180, 320, 180, 340, 150);
+	ctx.bezierCurveTo(420, 150, 420, 120, 390, 100);
+	ctx.bezierCurveTo(430, 40, 370, 30, 340, 50);
+	ctx.bezierCurveTo(320, 5, 250, 20, 250, 50);
+	ctx.bezierCurveTo(200, 5, 150, 10, 170, 80);
+	ctx.closePath();
+	ctx.lineWidth = 5;
+	ctx.fillStyle= "rgba(26, 178, 233, 0.9)";
+	ctx.fill();
+	ctx.strokeStyle = "fff";
+	ctx.stroke();
+
+	
 	ctx.strokeStyle = "rgb(0,20,0)";
 	ctx.fillStyle = "rgb(242,87,144)";
 	ctx.lineWidth = 8;
@@ -209,79 +225,68 @@ You must use at least 3 different methods.
 	ctx.beginPath();
 	ctx.arc(255, 175, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 		ctx.beginPath();
 	ctx.arc(128, 190, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(190, 160, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(170, 230, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(160, 300, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(240, 290, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(295, 230, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(100, 240, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(230, 240, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(315, 295, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.arc(85, 295, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fillStyle = "rgba(103, 12, 133, 0.4)";
 	ctx.fill();
-	
-	context.beginPath();
-	context.moveTo(170,80);
-	context.bezierCurveTo(130, 100, 130, 150, 230, 150);
-	context.bezierCurveTo(250, 180, 320, 180, 340, 150);
-	context.bezierCurveTo(420, 150, 420, 120, 390, 100);
-	context.bezierCurveTo(430, 40, 370, 30, 340, 50);
-	context.bezierCurveTo(320, 5, 250, 20, 250, 50);
-	context.bezierCurveTo(200, 5, 150, 20, 170, 80);
-	context.closePath();
-	
 	
 
 }
