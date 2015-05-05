@@ -1,7 +1,7 @@
 /*
      Name: Elimarie Morales Santiago
-     Date: April 2, 2015
-     Class & Section:  WIA-333O
+     Date: May 5, 2015
+     Class & Section:  Section 01 WIA-333O
      Comments: "HTML5 Canvas Drawing"
  */
 
@@ -27,11 +27,11 @@ FILE SETUP
 		var ctx = canvas.getContext("2d");
 		var image = new Image();
 		image.src = "image/logo.png";
-		if (!Modernizr.canvas){
+		/*if (!Modernizr.canvas){
 				alert("Canvas not supported in your browser");
 			}else{
 				alert("Canvas supported in your browser");
-		}
+		}*/
 
 /*******************************************
 PART 1
@@ -205,6 +205,74 @@ You must use at least 3 different methods.
  	ctx.closePath();
  	ctx.stroke();
  	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(255, 175, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+		ctx.beginPath();
+	ctx.arc(128, 190, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(190, 160, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(170, 230, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(160, 300, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(240, 290, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(295, 230, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(100, 240, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(230, 240, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(315, 295, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.arc(85, 295, 20, 0, Math.PI * 2, false);
+	ctx.closePath();
+	ctx.fillStyle = "rgba(26, 178, 186, 0.9)";
+	ctx.fill();
+	
+	context.beginPath();
 	
 
 }
