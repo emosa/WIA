@@ -27,11 +27,11 @@ FILE SETUP
 		var ctx = canvas.getContext("2d");
 		var image = new Image();
 		image.src = "image/logo.png";
-		/*if (!Modernizr.canvas){
+		if (!Modernizr.canvas){
 				alert("Canvas not supported in your browser");
 			}else{
 				alert("Canvas supported in your browser");
-		}*/
+		}
 
 /*******************************************
 PART 1
