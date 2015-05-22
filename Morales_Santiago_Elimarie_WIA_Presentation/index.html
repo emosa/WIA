@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      reveal.js - The HTML Presentation Framework
+    </title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css" id="theme">
+    
+  </head>
+  
+  <body>
+  
+    <div class="reveal">
+      <div class="slides">
+        
+        <section>
+          <h1> Reveal JS </h1>
+          <h3> The HTML Presentation of the Framework</h3>
+          <h4> By Elimarie Morales Santiago </h4>
+        </section>
+        
+        <section>
+          <h2> The HTML code </h2>
+          <p> The javascript frameworks help us to reduce development 
+          	  time by <em> giving </em> us functions and styles already 
+              pre made by someone else (the creator of the framework).
+          </p>
+        </section>
+        
+        <section>
+          <p>In order to explain how the framework is used I will explain 
+             how this presentation was made.
+          </p>
+        </section>
+        
+        <section>
+          <h2> The head tag </h2>
+          	<p>In the head tag of the html file of this presentation we 
+               have two link tags:
+            	<img src="images/head.jpg">
+            </p>
+        </section>
+        
+        <section>
+          <img src="images/reveal.jpg">
+          <ul>
+            <li>
+              The first link let us use all the styles that already exist 
+              in the <strong> reveal </strong> plug in.
+            </li>
+            <li>
+              This styles involve the size of the font, the color, the type of 
+              transitions of the slides, the space between different elements, 
+              among many other things.
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <img src="images/theme.jpg">
+          <ul>
+            <li>
+              The second link let us choose between different presets of color 
+              combinations for the font and the background.
+            </li>
+            <li>
+              The framework have other themes which you can check by clicking here:
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">
+                Black (default)
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">
+                White
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">
+                League
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">
+                Sky
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">
+                Beige
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">
+                Simple
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">
+                Serif
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">
+                Night
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">
+                Moon
+              </a>
+              -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">
+                Solarized
+              </a>
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2> The body tag </h2>
+          <p> In the body tag we can see the following:
+          </p>
+          <img src="images/body.jpg">
+        </section>
+        
+        <section>
+          <img src="images/revealclass.jpg">
+          <p> The first div (where all the slides are contained)
+            <strong> HAS </strong> to have a <em> reveal </em> class. 
+            With this, everything inside the div will behave exactly as expected.
+          </p>
+        </section>
+        
+        <section>
+          <img src="images/slideclass.jpg">
+          <p> The second div have the class <em> slides </em>. This means every 
+            <strong> section </strong> tag inside will become a slide on the browser.
+          </p>
+        </section>
+        
+        <section>
+          <img src="images/section.jpg">
+          <p> The section tags don't need a class or an id. Since they are already 
+              inside the <em> slides </em> and <em> reveal </em> divs.
+          </p>
+        </section>
+        
+        <section>
+          <p> Finally, at the end of the body tag, outside of the two containers, 
+              there are two scripts that make everything work:
+          </p>
+          <img src="images/script.jpg">
+          <p> And the end result is this very presentation.
+          </p>
+        </section>
+        
+      </div>
+      
+    </div>
+    
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function() {
+                return !!document.querySelector('pre code');
+            },
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+</script>
+    
+  </body>
+</html>
