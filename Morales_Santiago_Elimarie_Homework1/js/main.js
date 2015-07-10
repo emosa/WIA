@@ -1,37 +1,46 @@
 /*
      Name: Elimarie Morales Santiago
-     Date: May 5, 2015
-     Class & Section:  Section 01 WIA-333O
+     Date: July 9, 2015
+     Class & Section:  Section 01 WDD333-O
      Comments: "HTML5 Canvas Drawing"
  */
+
 
 /*******************************************
 HTML5 Shape Drawing Activity
     1.  Setup the canvas and 2d context
     2.  Draw out each shape in the sections below
-     
 ********************************************/
 
 /*******************************************
 FILE SETUP
 
 // Setup up 7 different Canvases in index.html one for each problem.
-// Link Modernizr.js
+//Link Modernizr.js
 // Link the main.js file
 // Setup the call to that canvas and get it's 2d context
 //Use Modernizr to verify that your browser supports canvas, include a fallback message
 ********************************************/
 
-	window.onload = function(){
-		var canvas = document.getElementById("PART1");
+
+
+/** PROFESSOR LOGO IS ONLY WORKING IN FIREFOX**/
+
+window.onload = function(){
+	var canvas = document.getElementById("PART1");
 		var ctx = canvas.getContext("2d");
+		
+		
 		var image = new Image();
 		image.src = "image/logo.png";
+		
+		
 		if (!Modernizr.canvas){
 				alert("Canvas not supported in your browser");
 			}else{
 				alert("Canvas supported in your browser");
 		}
+
 
 /*******************************************
 PART 1
@@ -44,12 +53,11 @@ Set the stroke color to black and the dimension of the stroke are the same as th
 Reminder - set the style first then draw.
 ********************************************/
 
-	ctx.fillStyle = "rgb(0,135,189)";
-	ctx.strokeStyle = "rgb(0,0,0)";
+	ctx.fillStyle = "#45d4ff";
+	ctx.strokeStyle = "black";
 	ctx.lineWidth = 1;
-	ctx.fillRect(0, 0, 50, 100);
-	ctx.strokeRect(0, 0, 50, 100);
-
+	ctx.fillRect(0,0,50,100);
+	ctx.strokeRect(0,0,50,100);
 
 /*******************************************
 PART 2
@@ -63,20 +71,21 @@ Reminder - set the style first then draw.
 Use the arc method
 ********************************************/
 
+
 	canvas = document.getElementById("PART2");
 	ctx = canvas.getContext("2d");
 	ctx.beginPath();
 	ctx.arc(50, 50, 20, 0, Math.PI * 2, false);
 	ctx.closePath();
-	ctx.fillStyle = "rgba(171,14,14,0.5)";
+	ctx.fillStyle = "rgba(139, 0, 0, .5)";
 	ctx.fill();
-	
 	ctx.strokeStyle = "rgb(0,0,0)";
 	ctx.beginPath();
 	ctx.arc(50, 50, 30, 0, Math.PI * 2, false);
 	ctx.closePath();
 	ctx.stroke();
 
+	
 /*******************************************
 PART 3
 
@@ -90,17 +99,16 @@ Height and width and color are up to you.
 
 	canvas = document.getElementById("PART3");
 	ctx = canvas.getContext("2d");
-	ctx.fillStyle = "rgb(90,150,150)";
+	ctx.fillStyle = "gold";
 	ctx.lineWidth = 2;
 	ctx.beginPath();
-	ctx.moveTo(100, 100);
-	ctx.lineTo(300, 100);
-	ctx.lineTo(120, 220);
-	ctx.lineTo(200, 50);
-	ctx.lineTo(260, 220);
+	ctx.moveTo(100,100);
+	ctx.lineTo(300,100);
+	ctx.lineTo(120,220);
+	ctx.lineTo(200,50);
+	ctx.lineTo(260,220);
 	ctx.closePath();
 	ctx.fill();
-
 
 /*******************************************
 PART 4
@@ -114,24 +122,24 @@ Do not overlap any other object.
 
 ********************************************/
 
- canvas = document.getElementById("PART4");
- ctx = canvas.getContext("2d");
- ctx.strokeStyle = "rgb(111,111,111)";
- ctx.fillStyle = "rgb(67,169,221)";
- ctx.lineWidth = 8;
- ctx.beginPath();
- ctx.moveTo(50, 350);
- ctx.bezierCurveTo(50, 50, 350, 50, 350, 350);
- ctx.bezierCurveTo(350, 320, 300, 320, 300, 350);
- ctx.bezierCurveTo(300, 320, 250, 320, 250, 350);
- ctx.bezierCurveTo(250, 320, 200, 320, 200, 350);
- ctx.bezierCurveTo(200, 320, 150, 320, 150, 350);
- ctx.bezierCurveTo(150, 320, 100, 320, 100, 350);
- ctx.bezierCurveTo(100, 320, 50, 320, 50, 350);
- ctx.closePath();
- ctx.stroke();
- ctx.fill();
- 
+//Draw Umbrella top here
+	canvas = document.getElementById("PART4");
+	ctx = canvas.getContext("2d");
+	ctx.strokeStyle = "rgb(0,20,0)";
+	ctx.fillStyle = "rgb(255,150,13)";
+	ctx.lineWidth = 8;
+	ctx.beginPath();
+	ctx.moveTo(50,350);
+	ctx.bezierCurveTo(50,50,350,50,350,350);
+	ctx.bezierCurveTo(350,320,300,320,300,350);
+	ctx.bezierCurveTo(300,320,250,320,250,350);
+	ctx.bezierCurveTo(250,320,200,320,200,350);
+	ctx.bezierCurveTo(200,320,150,320,150,350);
+	ctx.bezierCurveTo(150,320,100,320,100,350);
+	ctx.bezierCurveTo(100,320,50,320,50,350);
+	ctx.closePath();
+	ctx.stroke();
+	ctx.fill();
 
 /*******************************************
 PART 5
@@ -141,11 +149,12 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 ********************************************/
 
- canvas = document.getElementById("PART5");
- ctx = canvas.getContext("2d");
- ctx.font = "40px Impact, Charcoal, sans-serif";
- ctx.fillStyle = "rgb(242,88,53)";
- ctx.fillText("Let your light shine!", 10, 50);
+//Draw text here
+	canvas = document.getElementById("PART5");
+	ctx = canvas.getContext("2d");
+	ctx.font="50px Verdana";
+	ctx.fillStyle="rgb(55,200,244)";
+	ctx.fillText("Trust the timing of your life.",10,50);
 
 /*******************************************
 PART 6
@@ -160,11 +169,14 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 ********************************************/
 
- canvas = document.getElementById("PART6");
- ctx = canvas.getContext("2d");
- ctx.drawImage(image, 0, 0);
- ctx.drawImage(image, 0, 1200, image.width/2, image.height/2);
- ctx.drawImage(image, 300, 500, 500, 500, 1800, 1200, 500, 500);
+//Draw images here
+	canvas = document.getElementById("PART6");
+	ctx = canvas.getContext("2d");
+	canvas.setAttribute('width', image.width);
+	canvas.setAttribute('height', image.height * 1.5);
+	ctx.drawImage(image,0,0);
+	ctx.drawImage(image, 0, image.height, image.width / 2, image.height / 2);
+	ctx.drawImage(image, 280, 280, 320, 300, image.width / 1.8, image.height + 45, 200, 200);
 
 /*******************************************
 PART 7
@@ -289,4 +301,5 @@ You must use at least 3 different methods.
 	ctx.fill();
 	
 
-}
+
+};
