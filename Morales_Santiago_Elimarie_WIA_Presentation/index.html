@@ -30,6 +30,17 @@
         </section>
         
         <section>
+        <h2> Before we start </h2>
+        <p>
+        During this presentation you can press ESC to enter the slides overview, 
+        and you can also hold down alt and then click on any element to zoom on it. 
+        Afterwards click Alt and click anywhere to zoom back out.
+        This is possible thanks to a minimal JavaScript API <a href="http://fat.github.io/zoom.js">zoom.js</a>
+        which enables zooming in on elements in a document.
+        </p>
+        </section>
+        
+        <section>
           <p>In order to explain how the framework is used I will explain 
              how this presentation was made.
           </p>
@@ -156,17 +167,15 @@
     <script src="js/reveal.js"></script>
     
     <script>
-    // Full list of configuration options available at:
-    // https://github.com/hakimel/reveal.js#configuration
+    
     Reveal.initialize({
         controls: true,
         progress: true,
         history: true,
         center: true,
 
-        transition: 'concave', // none/fade/slide/convex/concave/zoom
+        transition: 'concave', 
 
-        // Optional reveal.js plugins
         dependencies: [{
             src: 'lib/js/classList.js',
             condition: function() {
