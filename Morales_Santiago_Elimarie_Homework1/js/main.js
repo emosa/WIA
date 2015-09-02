@@ -1,6 +1,6 @@
 /*
      Name: Elimarie Morales Santiago
-     Date: July 9, 2015
+     Date: September 1, 2015
      Class & Section:  Section 01 WDD333-O
      Comments: "HTML5 Canvas Drawing"
  */
